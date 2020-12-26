@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+html,body {
+    height: 100%;
+    text-align: center;
+  
+}
+body {
+    background: #0f3854;
+    background: radial-gradient(ellipse at center,  #0a2e38  0%, #000000 70%);
+    background-size: 100%;
+}
+
+p {
+    margin:0;
+    padding: 0;
+    font-family: 'Share Tech Mono', monospace;
+    color: #2f2d7c;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #73acbe;
+    text-shadow:  200px rgba(10, 175, 230, 1),   200px rgba(10, 175, 230, 0);
+}
+p {
+        letter-spacing: 0.05em;
+        font-size: 80px;
+        padding: 5px 0;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <p id="demo"></p>
+  
+    <script>
+     var myVar = setInterval(myTimer, 1000);
+     function myTimer() {
+       var d = new Date();
+       document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+     }
+     </script>
+</body>
+</html>
